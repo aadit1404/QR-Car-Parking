@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_master.master.cs" Inherits="Admin_master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-aller.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+
+
+        <div class="main">
+            <div class="header">
+                <div class="header_resize">
+                    <div class="logo">
+                        <h1><a href="#">QR<span>Car Parking</span></a></h1>
+                    </div>
+                    <div class="menu_nav">
+                        <% if (Session["a_id"] != null)
+                           {%>
+                        <ul>
+                            <li class="active"><a href="Home.aspx"><span>Home Page</span></a></li>
+                            <li><a href="Manage_parking.aspx"><span>Manage Parking</span></a></li>
+                            <li><a href="ManageCustomers.aspx"><span>Manage Customers</span></a></li>
+                            <%--<li><a href="ManageCustomers.aspx"><span>Add Balance</span></a></li>--%>
+                            <li><a href="AdminLogin.aspx"><span>Logout</span></a></li>
+                        </ul>
+                        <%} else{%>
+                            <ul>
+                            <li class="active"><a href="AdminLogin.aspx"><span>Admin Login</span></a></li>
+                            <li><a href="LobbyLogin.aspx"><span>Lobby Login</span></a></li>
+                        </ul>
+                        <%} %>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="slider">
+                        <div id="coin-slider">
+                            <a href="#">
+                                <img src="images/qrcarbg.jpg" width="960" height="320" alt="" />
+                            </a><a href="#">
+                                <img src="images/qrcarr.jpg" width="960" height="320" alt="" />
+                            </a><%--<a href="#">
+                            <img src="images/slide3.jpg" width="960" height="320" alt="" />
+                        </a>--%>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="content_resize">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="clr">
+                    </div>
+
+                </div>
+            </div>
+            <div class="fbg">
+                <div class="fbg_resize">
+                    <%--<div class="col c1">
+                        <h2><span>Image</span> Gallery</h2>
+                    </div>
+                    <div class="col c2">
+                        <h2><span>Services</span> Overview</h2>
+
+                    </div>
+                    <div class="col c3">
+                        <h2><span>Contact</span> Us</h2>
+                        <p></p>
+                    </div>
+                    <div class="clr"></div>--%>
+                </div>
+            </div>
+
+        </div>
+
+
+    </form>
+
+</body>
+</html>

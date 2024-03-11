@@ -1,0 +1,14 @@
+1> Android - Java
+2> Web site - Asp.NET 
+3> Web Api / service -  .NET (c#)
+
+.NET - Visual Studio 2022
+Db: Ms SQL Server
+
+
+--------------------------------------------
+
+Web Hosting
+-> Shared Windows hosting
+
+

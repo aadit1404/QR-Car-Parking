@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ParK IN</string>
+
+    <string-array name="sortingarray">
+        <item>Distance</item>
+        <item>Number of Slots</item>
+    </string-array>
+
+</resources>
