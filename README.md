@@ -1,1 +1,1 @@
-Design an effective application of QR code in automating car parking system that ensures a pleasant, efficient, friendly and safe experience with proper use of the existing space whereby improving efficiency by optimizing vehicle placement thus reducing traffic jams
+An effective application of QR code in automating car parking system that ensures a pleasant, efficient, friendly and safe experience with proper use of the existing space whereby improving efficiency by optimizing vehicle placement thus reducing traffic jams
